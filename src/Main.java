@@ -1,8 +1,8 @@
-import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 public class Main {
     public static void main(String[] args) {
-        LocalDateTime ld = LocalDateTime.now();
-        System.out.printf("Local Date: %d.%d.%d (%s)\n",ld.getDayOfMonth(),ld.getMonthValue(),ld.getYear(),ld.getDayOfWeek());
+        LocalTime ld = LocalTime.now();
+        System.out.printf("Local time: %d:%d:%d\n",ld.getHour(),ld.getMinute(),ld.getSecond());
     }
 }
